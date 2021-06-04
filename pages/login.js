@@ -21,7 +21,7 @@ const Login = () => {
 
     try {
       await mutateUser(
-        fetchJson('/api/login', {
+        fetchJson('http://193.26.14.198:5000/user/existencecheck', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(body),
